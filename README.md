@@ -1,12 +1,12 @@
-<article class="markdown-body entry-content container-lg" itemprop="text">
-  <h1>Ví dụ Dockerfile cơ bản</h1>
-  <p>Bước 1. Bạn vào thư mục chứa Dockerfile bằng lệnh sau</p>
-  <pre><code>cd dockerfile</code></pre>
-  <p>Bước 2. Build Docker image và tạo container mới trên image vừa tạo</p>
-  <pre><code>sudo docker build -t nginx_image .</code></pre>
-  <p>Bước 3. Chạy lệnh sau để tạo container mới từ nginx_image ở trên:</p>
-  <pre><code>sudo docker run -it -v $(pwd)/webroot:/var/www/html -p 9000:80 --name demo_dockerfile nginx_image</code></pre>
-  <p>Tiếp đến, truy cập vào địa chỉ http://http://192.168.33.10:9000, để tận hưởng thành quả nào.</p>
-  <hr>
-  <p>Bạn có thể tham khảo cách tạo Dockerfile tại <a href="https://viblo.asia/p/docker-tao-docker-images-tu-dockerfile-3P0lPORvZox" rel="nofollow">https://viblo.asia/p/docker-tao-docker-images-tu-dockerfile-3P0lPORvZox</a></p>
-</article>
+# Build file apk using Expo
+Run expo build:android or expo build:ios. If you don't already have a packager running for this project, expo will start one for you.
+
+### Bước 1: Login vào tài khoản Expo của bạn
+
+- **Chạy câu lệnh sau**: 
+
+```sh
+expo login -u [user] -p [password]
+```
+### Bước 2: Sau khi login thành công bạn chạy lệnh sau để tiên hành buld file apk
+- expo build:android
